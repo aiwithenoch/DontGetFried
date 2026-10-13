@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-10-13T09:21:46+00:00 — Codex — Cloudflare audit workflow review started
+
+- Objective: improve the existing Ghana-first, context-first legal/web-security skill using the audit mechanics from `cloudflare/security-audit-skill`, then publish the resulting skill changes to `dontgetfried/main` without replacing the existing workflow.
+- Source reviewed: Cloudflare repository commit `c1c8a8c1471069fb0e188eeaff69b8e8db6564a8`, including its MIT license, reconnaissance guidance, coverage-led hunting, structured finding schema, independent verification, repeat-run rules, and validators. Source URL: `https://github.com/cloudflare/security-audit-skill`.
+- Integration decision: adapt the mechanics as original, jurisdiction-aware instructions and a dependency-free validator; do not copy Cloudflare's vendor-specific attack prose or validator implementation. Add explicit attribution/source context in the new reference while preserving the repository's single `Ai With Enoch` Git author identity.
+- Scope: skill instructions, audit artifact contract, validator, UI invocation prompt, README routing, and this append-only changelog. No application repository, live endpoint, credential, production environment, or user data is in scope.
+- Safety boundary: the audit mode will require explicit audit/report intent, source/local or explicitly authorized staging evidence, synthetic data, low-volume checks, no external/shared-service testing, no destructive actions, and no legal-compliance or security-certification claim from a format validator.
+- Next steps: implement the reference and validator, wire them into the skill, run structural/script validation, commit, push to `dontgetfried/main`, and verify the remote and authorship.
+
+## 2026-10-13T09:25:13+00:00 — Codex — independently verified audit workflow implemented
+
+- Added `skills/legal-web-security/references/independently-verified-audit-workflow.md` with explicit `guidance`/`quick`/`standard`/`deep` routing, context and execution boundaries, isolated audit artifacts, deterministic coverage units, coverage-led hunting, stable fingerprints, distinct `confirmed`/`needs_validation`/`rejected` records, independent verification, final-record verification, additive reruns, and target-neutral reporting rules.
+- Added `skills/legal-web-security/scripts/validate_audit_records.py`, a dependency-free validator for `coverage-ledger.json` and `findings.json`. It enforces bounded UTF-8 JSON input, safe repository-relative paths, canonical coverage IDs, sorted/unique fingerprints, coverage/check bookkeeping, distinct verdict fields, legal/jurisdiction context, reviewer separation, and severity not exceeding demonstrated impact.
+- Updated `skills/legal-web-security/SKILL.md`, `skills/legal-web-security/agents/openai.yaml`, and `README.md` so explicit full audits route through the new workflow without changing the default context-first behavior.
+- Validation passed: valid `needs_validation` fixture; invalid severity-on-`needs_validation` fixture rejected; in-memory `confirmed` branch accepted; severity-over-impact case rejected; Python compilation; `quick_validate.py`; Ruby YAML parse; Markdown structure check; and `git diff --check`.
+- Safety/attribution decision: no Cloudflare attack-class prose, branding, or implementation files were copied. The new reference identifies the Cloudflare source commit and MIT license context. No live target, external service, secret, production data, or destructive action was used.
+- Current state: changes are ready to commit and push to `https://github.com/aiwithenoch/DontGetFried.git`; final remote equality, author identity, validator, YAML, and clean-tree checks remain.
+
 ## 2026-10-13T07:33:30+00:00 — Codex — repository and skill kickoff
 
 - Objective: begin building a reusable legal-and-security skill for web-coding work, with `General-Legal/legal-templates` as the canonical GitHub repository for the implementation.

@@ -39,7 +39,8 @@ These templates include a General Legal credit footnote. The templates are relea
 DontGetFried/
   skills/
     legal-web-security/     # Codex skill for legal-aware web coding and security review
-      references/           # Context-first analysis, Ghana/Africa jurisdiction routing, web/mobile checklists, release gates, and legal/security references
+      references/           # Context-first analysis, Ghana/Africa jurisdiction routing, coverage-led audit workflow, web/mobile checklists, release gates, and legal/security references
+      scripts/              # Dependency-free audit-record validator
   templates/                  # One directory per template
     advisor-agreement/
     business-associate-agreement/

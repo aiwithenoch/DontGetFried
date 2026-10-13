@@ -1,7 +1,7 @@
 interface:
   display_name: "Legal & Web Security"
   short_description: "Build safer web apps with legal guardrails"
-  default_prompt: "Use $legal-web-security to inspect the actual app repository and authorized runtime context first, route Ghana/Africa work through the country-specific legal and security matrix, then create context-specific work with evidence, tests, and open questions. Never treat Africa as one jurisdiction or fill unknown facts with generic U.S. assumptions."
+  default_prompt: "Use $legal-web-security to inspect the actual app repository and authorized runtime context first, route Ghana/Africa work through the country-specific legal and security matrix, then create context-specific work with evidence, tests, and open questions. When a full audit is explicitly requested, use the coverage-led independently verified audit workflow and validate its machine-readable records. Never treat Africa as one jurisdiction or fill unknown facts with generic U.S. assumptions."
 
 policy:
   allow_implicit_invocation: true

@@ -20,6 +20,12 @@ This is the skill's default mode, not an optional audit flavor. Before selecting
 - Every generated paragraph, finding, patch, test, and prompt must connect to an actual file, route, schema, SDK, vendor, config, user journey, runtime observation, or visible open question. Generic output is a failure mode to remove before handoff.
 - If the target cannot be inspected, produce an evidence-gap report or clearly marked non-production outline—not a publishable privacy policy, terms, cookie notice, or claim that the app is secure or compliant.
 
+## Explicit full-audit mode
+
+When the user explicitly requests a security audit, comprehensive pre-launch review, legal/security audit, repeatable audit report, or coverage artifacts, read [the independently verified, coverage-led audit workflow](references/independently-verified-audit-workflow.md). Use its `quick`, `standard`, or `deep` mode only when the requested scope supports it. It adds a deterministic coverage ledger, separate `confirmed` / `needs_validation` / `rejected` records, stable finding fingerprints, independent verification, additive reruns, and a dependency-free artifact validator at `scripts/validate_audit_records.py`.
+
+Do not silently switch ordinary implementation work into a broad audit. In audit mode, create artifacts only in an explicit or disposable output directory, use source/local or explicitly authorized staging evidence, keep legal routing separate from security verdicts, and never claim that a complete ledger proves security, compliance, or store approval.
+
 ## Ghana-first and Africa-aware jurisdiction mode
 
 When Ghana, Africa, ECOWAS, African users, mobile money, Ghanaian business operations, or a Ghana/Africa launch is mentioned, read [the Ghana-first and Africa-aware compliance router](references/ghana-africa-compliance-router.md) before drafting or changing an artifact. It makes Ghana Act 843/Act 772/Act 1038, DPC/CSA/NCA/BoG/GRA/ORC routing, child-safety and transfer questions, and Ghana-relevant security risks first-class checks.
@@ -180,5 +186,6 @@ For implementation work, leave the context snapshot, evidence ledger, requiremen
 - Read [secure-launch-scorecard.md](references/secure-launch-scorecard.md) for the ten-control secure-launch scorecard and audit prompt.
 - Read [browser-and-edge-audit.md](references/browser-and-edge-audit.md) for authorized DevTools, bundle/storage, XSS, uploads, webhooks, rate-limit, and edge-protection checks.
 - Read [production-release-gate.md](references/production-release-gate.md) for paperwork, consent-aware analytics/session replay, authentication versus authorization, database/RLS, evidence, and combined pre-production prompts.
+- Read [independently-verified-audit-workflow.md](references/independently-verified-audit-workflow.md) for explicit full-audit mode, coverage-led hunting, stable verdicts, independent verification, additive reruns, and machine-readable audit artifacts.
 - Read [refund-policy-outline.md](references/refund-policy-outline.md) when a paid product, subscription, order, or cancellation flow needs a refund artifact and no approved policy exists.
 - Read [secure-web-baseline.md](references/secure-web-baseline.md) for security-control families, testing evidence, and framework versioning.
