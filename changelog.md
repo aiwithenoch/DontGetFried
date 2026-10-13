@@ -335,3 +335,13 @@
 - Ran a focused structure/source check for the router: required Ghana statutes/regulators, AU/ECOWAS layer, Nigeria/Kenya/Rwanda/South Africa adapters, context-first prompt, no-pan-African claim, and balanced code fences all passed; the file is 222 lines with 31 source-bearing lines.
 - Failed diagnostic and correction: the first custom assertion expected the exact phrase `Do not return “compliant in Africa”`, but the sentence used punctuation inside the quotation. The assertion was corrected by revising the sentence to say `Do not return “compliant in Africa” or claim ...`; no substantive research/control was changed.
 - Current state: validation is green; the modified skill and changelog are ready to commit and publish to `dontgetfried/main`.
+
+## 2026-10-13T08:16:36+00:00 — Codex — Ghana/Africa router published
+
+- Committed the validated changes as `ed0c91a` (`Add Ghana Africa compliance routing`) on `feat/legal-web-security-skill`.
+- Published with `git push dontgetfried HEAD:main` to `https://github.com/aiwithenoch/DontGetFried.git`.
+- Post-push check: `git ls-remote dontgetfried refs/heads/main` returned `ed0c91abc657dc1e0514ac0617fd4bd6a1cbb8f6`, matching local `HEAD` exactly.
+- Post-push check: `git shortlog -sne HEAD` contains only `Ai With Enoch <aiwithenoch@gmail.com>`; no additional author identity was introduced.
+- Post-push check: skill validator passed, `openai.yaml` parsed, and `git diff --check` passed. The working tree was clean before this append-only entry.
+- Completed scope: Ghana-first/Africa-aware compliance routing and source register are published. No application-specific legal policy, live runtime audit, regulator filing, payment configuration, or production change was performed because no target app/runtime or credentials were in scope.
+- Next step: publish this final changelog entry, re-run the exact remote/validator checks, and leave the local recovery branch `backup/pre-contributor-cleanup` untouched.
