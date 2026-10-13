@@ -293,3 +293,11 @@
 - Safety plan: create a local recovery branch at the current published commit, append this record, build one new root commit from the current tree with the `Ai With Enoch` GitHub-linked identity, verify the remote still equals the known hash, and use `--force-with-lease` to replace only `dontgetfried/main`.
 - Integrity decision: do not remove or rewrite the repository's CC0/license or General Legal attribution to conceal provenance. A clean target history does not make the underlying CC0 templates original work.
 - No files other than the append-only changelog are intended to change in the history cleanup; no live application, credentials, or production data are involved.
+
+## 2026-10-13T08:08:20+00:00 — Codex — inherited contributor history cleanup completed
+
+- Created local recovery branch `backup/pre-contributor-cleanup` at `fba8e641adf6fc61058c08c6d8c06747f3abc197` before rewriting the published history.
+- Created root commit `5a78f31196023d7aeec2985cb28243bebac5d463` from the current repository tree with no parent commits and author/committer `Ai With Enoch <aiwithenoch@gmail.com>`.
+- Verified the target remote was still exactly `fba8e641adf6fc61058c08c6d8c06747f3abc197`, then replaced `dontgetfried/main` with `git push --force-with-lease=refs/heads/main:fba8e641adf6fc61058c08c6d8c06747f3abc197 ...`.
+- Verification after replacement: target `main` resolved to the new root commit; `git shortlog -sne HEAD` showed only `Ai With Enoch <aiwithenoch@gmail.com>`; the working tree was clean; the CC0 license and General Legal attribution remained unchanged.
+- Local repository author configuration is now `Ai With Enoch <aiwithenoch@gmail.com>` so future commits from this checkout do not create an unrelated author identity.
