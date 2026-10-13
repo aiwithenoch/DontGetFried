@@ -345,3 +345,12 @@
 - Post-push check: skill validator passed, `openai.yaml` parsed, and `git diff --check` passed. The working tree was clean before this append-only entry.
 - Completed scope: Ghana-first/Africa-aware compliance routing and source register are published. No application-specific legal policy, live runtime audit, regulator filing, payment configuration, or production change was performed because no target app/runtime or credentials were in scope.
 - Next step: publish this final changelog entry, re-run the exact remote/validator checks, and leave the local recovery branch `backup/pre-contributor-cleanup` untouched.
+
+## 2026-10-13T08:16:51+00:00 — Codex — final Ghana/Africa publication verification
+
+- Final remote check: target `dontgetfried/main` and local `HEAD` both resolve to `b786c8b044b24b87f83aa9bd2aba2834b2978fc0`.
+- Final authorship check: the unique reachable Git author is `Ai With Enoch <aiwithenoch@gmail.com>`; no other contributor identity was added to the rewritten target history.
+- Final checks passed: `quick_validate.py skills/legal-web-security`, Ruby YAML parsing for `skills/legal-web-security/agents/openai.yaml`, and `git diff --check`.
+- Final target remote verified as `https://github.com/aiwithenoch/DontGetFried.git`; working tree is clean.
+- Completed state: the requested Ghana-first/Africa-aware skill routing is pushed to the requested GitHub repository. The skill remains explicit that it is not a legal opinion or a pan-African compliance certification and that application-specific runtime evidence is still required when the skill is used.
+- No blockers. Deferred by scope: auditing or changing a real application, publishing a real privacy/terms/refund/cookie artifact for an app with unknown facts, regulator filings/licences, and production changes.
