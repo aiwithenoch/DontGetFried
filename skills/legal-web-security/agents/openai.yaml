@@ -1,0 +1,7 @@
+interface:
+  display_name: "Legal & Web Security"
+  short_description: "Build safer web apps with legal guardrails"
+  default_prompt: "Use $legal-web-security to inspect the actual app repository and authorized runtime context first, then create context-specific legal and security work with evidence, tests, and open questions."
+
+policy:
+  allow_implicit_invocation: true
