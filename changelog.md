@@ -306,3 +306,32 @@
 
 - Local Git verification succeeded: `dontgetfried/main` and `HEAD` resolve to the cleaned history, and `git shortlog -sne HEAD` contains only `Ai With Enoch <aiwithenoch@gmail.com>`.
 - The web tool could not fetch GitHub's public contributors page or API endpoint because those URLs were restricted by the browsing tool. This does not change the verified remote Git history; GitHub's graph UI may need to recalculate after the forced update.
+
+## 2026-10-13T08:09:23+00:00 — Codex — Ghana and Africa compliance research started
+
+- Objective: make the legal/security skill Ghana-first and Africa-aware, while preventing the agent from treating Africa as one legal system or defaulting to U.S.-only assumptions.
+- Requested depth: perform primary-source research for Ghana data protection, cybersecurity, electronic transactions, consumer/payment/business/tax issues, children and direct-marketing concerns, and relevant African regional and country adapters; then encode the result as context-driven routing and evidence requirements.
+- Starting state: target `dontgetfried/main` and local `HEAD` are synchronized at the contributor-history cleanup; all reachable commits on `HEAD` are authored by `Ai With Enoch`; working tree was clean before this entry.
+- Scope decision: update the reusable skill and references only. No application repository, live service, user data, credentials, or production configuration is available for compliance testing.
+- Research rule: use official regulator, government, regional-body, statute, or primary legal sources where available; label each source's legal status, effective date, jurisdiction, and whether it is law, guidance, policy, or a vendor/framework reference. Do not claim pan-African compliance.
+
+## 2026-10-13T08:15:20+00:00 — Codex — Ghana-first and Africa-aware router implemented
+
+- Added `skills/legal-web-security/references/ghana-africa-compliance-router.md` as the detailed jurisdiction and evidence router for Ghana/Africa work.
+- Encoded Ghana-specific routing for Data Protection Act 2012 (Act 843): sections 17–31 principles, notice, minimality, registration, processor contracts, security safeguards, security-compromise notifications, rights, direct marketing, automated decisions, external processing, renewal, and supervisor/guidance distinctions.
+- Encoded Ghana electronic-commerce checks from Act 772 sections 46–54: legal identity/contact details, full price including taxes/fees, terms, fulfilment, transaction records, refunds/returns, grace-period exceptions, prior consent, unsubscribe/source information, and non-exclusion of consumer rights.
+- Encoded Ghana Cybersecurity Act 2020/CSA routing: incident reporting scope, designated CII and its 24-hour/72-hour directive controls, child-online safety, and licensing boundaries for paid cybersecurity services. Avoided applying CII or CSA service-provider licensing to an ordinary SaaS app without evidence.
+- Encoded DPC cookie/consent evidence checks, NCA SMS/call marketing routing, Bank of Ghana payment/licence classification, GRA tax referral, ORC/entity details, Ghana children/age-assurance uncertainty, mobile-money/SIM/shared-device risks, and cross-border vendor/AI/SDK inventory.
+- Added AU/ECOWAS routing and representative Nigeria, Kenya, Rwanda, and South Africa adapters. Explicitly marked the AU Data Policy Framework, Malabo status, ECOWAS revision work, Ghana draft bill, and NCA A2P consultation as policy/treaty-status/watch/draft/consultation items rather than universal current law.
+- Updated `skills/legal-web-security/SKILL.md`, `skills/legal-web-security/agents/openai.yaml`, and `README.md` so Ghana/Africa mode is discoverable and the agent must not treat Africa as one jurisdiction or substitute generic U.S./EU assumptions.
+- Research sources were official regulator/government/regional/statute or primary legal-text sources checked on 2026-10-13; direct URLs and source-status rules are recorded in the new reference. No live app, credentials, user data, or production configuration were available or used.
+- Current state: implementation is ready for validation. Next steps are factual/legal review of the source wording, validator checks, commit, push to `dontgetfried/main`, and post-push verification.
+
+## 2026-10-13T08:16:09+00:00 — Codex — Ghana/Africa router validation
+
+- Ran `python3 /Users/admin/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/legal-web-security`: passed with `Skill is valid!`.
+- Ran Ruby YAML parsing for `skills/legal-web-security/agents/openai.yaml`: passed.
+- Ran `git diff --check`: passed.
+- Ran a focused structure/source check for the router: required Ghana statutes/regulators, AU/ECOWAS layer, Nigeria/Kenya/Rwanda/South Africa adapters, context-first prompt, no-pan-African claim, and balanced code fences all passed; the file is 222 lines with 31 source-bearing lines.
+- Failed diagnostic and correction: the first custom assertion expected the exact phrase `Do not return “compliant in Africa”`, but the sentence used punctuation inside the quotation. The assertion was corrected by revising the sentence to say `Do not return “compliant in Africa” or claim ...`; no substantive research/control was changed.
+- Current state: validation is green; the modified skill and changelog are ready to commit and publish to `dontgetfried/main`.

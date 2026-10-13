@@ -20,6 +20,12 @@ This is the skill's default mode, not an optional audit flavor. Before selecting
 - Every generated paragraph, finding, patch, test, and prompt must connect to an actual file, route, schema, SDK, vendor, config, user journey, runtime observation, or visible open question. Generic output is a failure mode to remove before handoff.
 - If the target cannot be inspected, produce an evidence-gap report or clearly marked non-production outline—not a publishable privacy policy, terms, cookie notice, or claim that the app is secure or compliant.
 
+## Ghana-first and Africa-aware jurisdiction mode
+
+When Ghana, Africa, ECOWAS, African users, mobile money, Ghanaian business operations, or a Ghana/Africa launch is mentioned, read [the Ghana-first and Africa-aware compliance router](references/ghana-africa-compliance-router.md) before drafting or changing an artifact. It makes Ghana Act 843/Act 772/Act 1038, DPC/CSA/NCA/BoG/GRA/ORC routing, child-safety and transfer questions, and Ghana-relevant security risks first-class checks.
+
+Never treat “Africa” as a jurisdiction or claim pan-African compliance. Build a country matrix for every actual target, data-subject location, entity, processor, hosting region, payment rail, and sector. Separate statute, regulator guidance, policy framework, consultation, draft bill, platform rule, vendor statement, and engineering recommendation. If a Ghana-specific fact or country law is unknown, keep it visible as `unknown`, `not verified`, or `needs counsel`; do not fill it with a U.S., EU, or generic African assumption.
+
 ## Non-negotiable boundaries
 
 - This skill is an engineering and issue-spotting aid, not a lawyer, law firm, compliance certification, or substitute for licensed counsel. Never state that a product, policy, contract, or implementation is legally compliant unless the user supplies an authoritative determination and the statement is accurately scoped.
@@ -82,6 +88,8 @@ When the user asks for a quick secure-launch score or a fixed number of checks, 
 When the request calls for browser DevTools, front-end bundle/storage inspection, XSS/upload/payment-webhook checks, or CDN/WAF/DDoS review, read [the authorized browser and edge audit](references/browser-and-edge-audit.md). Use only owned or explicitly authorized test environments, synthetic data, redacted evidence, and low-volume probes.
 
 When the request is a pre-production release gate for paperwork, cookie or analytics consent, session replay, authentication versus authorization, database policies, or RLS, read [the production paperwork, consent, and database authorization gate](references/production-release-gate.md). Treat vendor defaults, fixed penalty claims, and RLS assurances as facts to verify—not universal rules. Require a facts-to-document crosswalk, consent-state evidence, server-side authorization tests, and counsel/security-owner escalation for unresolved decisions.
+
+When the request involves Ghana/Africa jurisdiction, local consumer disclosures/refunds, Ghana data-protection registration, local incident/marketing/payment rules, children, cross-border vendors, or a multi-country African launch, read [the Ghana-first and Africa-aware compliance router](references/ghana-africa-compliance-router.md). It is a country-routing and evidence reference, not a legal conclusion.
 
 ## Route the work
 
@@ -166,6 +174,7 @@ For implementation work, leave the context snapshot, evidence ledger, requiremen
 - Read [web-compliance-checklist.md](references/web-compliance-checklist.md) for the public-web release baseline.
 - Read [mobile-app-release-checklist.md](references/mobile-app-release-checklist.md) for iOS, Android, AI, app-store, UGC, payment, deletion, and mobile-security release checks.
 - Read [production-security-and-monetization.md](references/production-security-and-monetization.md) for rate limits, identity providers, tenancy, secrets, monitoring, payments, Polar/vendor review, webhooks, and entitlement evidence.
+- Read [ghana-africa-compliance-router.md](references/ghana-africa-compliance-router.md) when Ghana, Africa, ECOWAS, African users/vendors, mobile money, local SMS/USSD, Ghana entity/payment/tax questions, or multi-country African compliance is in scope.
 - Read [vibe-coded-app-security-cheatsheet.md](references/vibe-coded-app-security-cheatsheet.md) for 30 defensive security targets and copy/paste remediation prompts across eight categories.
 - Read [launch-preflight-and-store-rejection.md](references/launch-preflight-and-store-rejection.md) for the four launch security gates, destructive-operation safeguards, and evidence-based Apple rejection handling.
 - Read [secure-launch-scorecard.md](references/secure-launch-scorecard.md) for the ten-control secure-launch scorecard and audit prompt.

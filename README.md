@@ -10,7 +10,7 @@ These templates are provided in LLM-optimized markdown and original .docx format
 
 | Skill | Description |
 |-------|-------------|
-| [Legal & Web Security](skills/legal-web-security/) | Inspect the actual app context first, then create fact-matched legal, privacy, consent, accessibility, and application-security work |
+| [Legal & Web Security](skills/legal-web-security/) | Inspect the actual app context first, then create fact-matched Ghana/Africa-aware legal, privacy, consent, accessibility, and application-security work |
 
 ## Attribution
 
@@ -39,7 +39,7 @@ These templates include a General Legal credit footnote. The templates are relea
 DontGetFried/
   skills/
     legal-web-security/     # Codex skill for legal-aware web coding and security review
-      references/           # Context-first analysis, web/mobile checklists, production release gates, and legal/security references
+      references/           # Context-first analysis, Ghana/Africa jurisdiction routing, web/mobile checklists, release gates, and legal/security references
   templates/                  # One directory per template
     advisor-agreement/
     business-associate-agreement/
