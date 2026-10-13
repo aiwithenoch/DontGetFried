@@ -301,3 +301,8 @@
 - Verified the target remote was still exactly `fba8e641adf6fc61058c08c6d8c06747f3abc197`, then replaced `dontgetfried/main` with `git push --force-with-lease=refs/heads/main:fba8e641adf6fc61058c08c6d8c06747f3abc197 ...`.
 - Verification after replacement: target `main` resolved to the new root commit; `git shortlog -sne HEAD` showed only `Ai With Enoch <aiwithenoch@gmail.com>`; the working tree was clean; the CC0 license and General Legal attribution remained unchanged.
 - Local repository author configuration is now `Ai With Enoch <aiwithenoch@gmail.com>` so future commits from this checkout do not create an unrelated author identity.
+
+## 2026-10-13T08:08:51+00:00 — Codex — contributor graph verification limitation
+
+- Local Git verification succeeded: `dontgetfried/main` and `HEAD` resolve to the cleaned history, and `git shortlog -sne HEAD` contains only `Ai With Enoch <aiwithenoch@gmail.com>`.
+- The web tool could not fetch GitHub's public contributors page or API endpoint because those URLs were restricted by the browsing tool. This does not change the verified remote Git history; GitHub's graph UI may need to recalculate after the forced update.
